@@ -1,4 +1,6 @@
-# SafeFood
+## SafeFood
+# Angular
+# Tailwind
 
 # todo 
 - [] list of ingredients autocomplete convert to component
