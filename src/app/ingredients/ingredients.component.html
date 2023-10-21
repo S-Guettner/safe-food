@@ -1,7 +1,13 @@
 <p>ingredients works!</p>
-<input [(ngModel)]="inputValue" (ngModelChange)="onInputChange()" type="text" placeholder="Enter something..." />
-<ul>
-    <li *ngFor="let ingredient of ingredients">
-      <strong>Name:</strong> {{ ingredient.name }}<br>
-    </li>
-  </ul>
+<input [(ngModel)]="inputValue" (ngModelChange)="onInputChange()" type="text" placeholder="Search for ingredient..." />
+    <section class="w-1/2 flex">
+        <div class="mb-20" *ngFor="let ingredient of ingredients">
+          <p>{{ ingredient.name }}</p> <br>
+    
+          <img [src]="'https://spoonacular.com/cdn/ingredients_100x100/' + ingredient.image" alt="Ingredient Image" *ngIf="ingredient.image" />
+    
+          <button>add ingredient</button>
+        </div>
+
+     
+    </section>

@@ -12,13 +12,13 @@ export class AppComponent {
 
   }
   // runs instant
-  ngOnInit(): void {
+ /*  ngOnInit(): void {
     const apiKey = environment.apiKey
     console.log(environment.apiKey)
     this.http.get(`https://api.spoonacular.com/recipes/random?number=1&tags=vegetarian,dessert&apiKey=${apiKey}`).subscribe(res => 
     console.log(res)
     )
-  }
+  } */
 
   title = 'safe-food';
 }
