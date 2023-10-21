@@ -1,0 +1,18 @@
+<div class="w-32">
+  <p class="text-center">{{ ingridientName }}</p>
+  <img
+    class="mx-auto my-4"
+    [src]="ingridientImageUrl"
+    *ngIf="ingridientImageUrl"
+  />
+  <div class="flex justify-center">
+    <button
+      (click)="addToList(ingridientName)"
+      class="p-2 rounded-3xl border border-green-500"
+      [ngClass]="{'border-green-500': !allreadyAdded, 'border-red-500': allreadyAdded}"
+    >
+      <p *ngIf="allreadyAdded">remove</p>
+      <p *ngIf="!allreadyAdded">add to list</p>
+    </button>
+  </div>
+</div>
