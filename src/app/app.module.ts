@@ -6,11 +6,15 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { FormsModule } from '@angular/forms';
+import { IngridientComponent } from './ingridient/ingridient.component';
+
+import { SharedService } from './shared.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IngredientsComponent
+    IngredientsComponent,
+    IngridientComponent
   ],
   imports: [
     BrowserModule,
@@ -18,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
