@@ -9,12 +9,14 @@ import { FormsModule } from '@angular/forms';
 import { IngridientComponent } from './ingridient/ingridient.component';
 
 import { SharedService } from './shared.service';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IngredientsComponent,
-    IngridientComponent
+    IngridientComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
